@@ -705,3 +705,67 @@ footer {
 	    left: 44%;
 	}
 }
+
+.hw9-scope .form-control {
+  color: #000 !important;                /* readable text */
+  background-color: #fff !important;     /* white background */
+  border-color: #8e8e8e !important;      /* base border */
+  box-shadow: none !important;
+}
+
+/* Placeholders readable too */
+.hw9-scope .form-control::placeholder {
+  color: #777;
+}
+
+/* Default / Error / Success states */
+.hw9-scope .form-group.has-default .form-control {
+  border-color: #bbb !important;
+}
+
+.hw9-scope .has-success .form-control {
+  border-color: #3c763d !important;      /* Bootstrap success green */
+}
+
+.hw9-scope .has-error .form-control {
+  border-color: #a94442 !important;      /* Bootstrap error red */
+}
+
+/* Match help text colors to state (optional) */
+.hw9-scope .has-success .help-block { color: #3c763d; }
+.hw9-scope .has-error   .help-block { color: #a94442; }
+.hw9-scope .has-default .help-block { color: #666; }
+
+/* Ensure theme's dark contact styles don't bleed into HW9 */
+.hw9-scope .form-group input,
+.hw9-scope .form-group textarea {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+/* === HW9: make the Submit button visible and use Bootstrap colors === */
+.hw9-scope .btn {
+  border-radius: 4px;                 /* looks nicer than square */
+}
+
+/* Restore Bootstrap 3 primary button colors (override theme .btn) */
+.hw9-scope .btn-primary {
+  color: #fff !important;
+  background-color: #337ab7 !important;
+  border-color: #2e6da4 !important;
+}
+
+.hw9-scope .btn-primary:hover,
+.hw9-scope .btn-primary:focus,
+.hw9-scope .btn-primary:active {
+  color: #fff !important;
+  background-color: #286090 !important;
+  border-color: #204d74 !important;
+}
+
+/* Optional: make the button text always visible even if theme applies filters */
+.hw9-scope .btn-primary:active,
+.hw9-scope .btn-primary:focus {
+  outline: 0;
+  box-shadow: none;
+}

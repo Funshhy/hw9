@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HW9 – Event Handlers w/ Parameters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- LOCAL Bootstrap 3.4 CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Your theme + overrides -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- add the scope class here -->
+  <div class="container hw9-scope" style="max-width:720px;margin-top:40px;">
+    <h1 class="text-center">HW9 – Event Listeners with Parameters</h1>
+    <p class="text-muted text-center">No inline handlers. All validation via <code>addEventListener</code> + parameters.</p>
+
+    <form id="signupForm" class="hw9-scope" novalidate>
+      <!-- NAME -->
+      <div class="form-group has-default" id="group-name">
+        <label for="name">Name</label>
+        <input class="form-control" id="name" type="text" placeholder="Enter full name">
+        <span class="help-block" id="help-name">Please enter at least 2 characters.</span>
+      </div>
+
+      <!-- EMAIL -->
+      <div class="form-group has-default" id="group-email">
+        <label for="email">Email</label>
+        <input class="form-control" id="email" type="email" placeholder="name@example.com">
+        <span class="help-block" id="help-email">Must be a valid email (e.g., name@domain.com).</span>
+      </div>
+
+      <!-- AGE -->
+      <div class="form-group has-default" id="group-age">
+        <label for="age">Age</label>
+        <input class="form-control" id="age" type="number" min="1" max="120" placeholder="18">
+        <span class="help-block" id="help-age">Enter an age between 1 and 120.</span>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+  </div>
+
+  <script src="js/event-handler.js"></script>
+</body>
+</html>
